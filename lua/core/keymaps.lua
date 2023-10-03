@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 -- some
-vim.keymap.set("n", "<M-b>", ":Ex<CR>")
+--vim.keymap.set("n", "<M-b>", ":Ex<CR>")
 
 -- split screen and navigation
 vim.keymap.set("n", "<leader>v", ":vsplit<CR><C-w>l", { noremap = true })
