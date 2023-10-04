@@ -60,8 +60,8 @@ local ensure_packer = function()
     use {"akinsho/toggleterm.nvim", tag = '*' },
     --use "jhlgns/naysayer88.vim",
     use "terrortylor/nvim-comment",
-    use 'm4xshen/autoclose.nvim',
-    use "CreaturePhil/vim-handmade-hero"
+    use "CreaturePhil/vim-handmade-hero",
+    use "cohama/lexima.vim"
   }
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
