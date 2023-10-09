@@ -16,14 +16,14 @@ local ensure_packer = function()
     -- My plugins here
     -- use 'foo1/bar1.nvim'
     -- use 'foo2/bar2.nvim'
-    use { "ellisonleao/gruvbox.nvim" }
-    -- use({
-    --   "neanias/everforest-nvim",
-    --   -- Optional; default configuration will be used if setup isn't called.
-    --   config = function()
-    --     require("everforest").setup()
-    --   end,
-    -- })
+    --use { "ellisonleao/gruvbox.nvim" }
+    use({
+      "neanias/everforest-nvim",
+      -- Optional; default configuration will be used if setup isn't called.
+      config = function()
+        require("everforest").setup()
+      end,
+    })
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.1',
