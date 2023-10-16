@@ -62,7 +62,16 @@ local ensure_packer = function()
     use "terrortylor/nvim-comment",
     use "CreaturePhil/vim-handmade-hero",
     use "lukas-reineke/indent-blankline.nvim",
-    use "cohama/lexima.vim"
+    use "cohama/lexima.vim",
+    use {
+      "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = { 
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+        }
+      }
   }
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
