@@ -61,6 +61,7 @@ local ensure_packer = function()
     --use "jhlgns/naysayer88.vim",
     use "terrortylor/nvim-comment",
     use "CreaturePhil/vim-handmade-hero",
+    use "lukas-reineke/indent-blankline.nvim",
     use "cohama/lexima.vim"
   }
     -- Automatically set up your configuration after cloning packer.nvim

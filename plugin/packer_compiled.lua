@@ -121,6 +121,11 @@ _G.packer_plugins = {
     path = "/Users/ristoflink/.local/share/nvim/site/pack/packer/start/grail",
     url = "https://github.com/chama-chomo/grail"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/ristoflink/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lexima.vim"] = {
     loaded = true,
     path = "/Users/ristoflink/.local/share/nvim/site/pack/packer/start/lexima.vim",
@@ -205,14 +210,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: grail
-time([[Config for grail]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ngrail\frequire\0", "config", "grail")
-time([[Config for grail]], false)
 -- Config for: everforest-nvim
 time([[Config for everforest-nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
 time([[Config for everforest-nvim]], false)
+-- Config for: grail
+time([[Config for grail]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ngrail\frequire\0", "config", "grail")
+time([[Config for grail]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
