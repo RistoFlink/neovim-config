@@ -64,6 +64,16 @@ local ensure_packer = function()
     use "lukas-reineke/indent-blankline.nvim",
     use "cohama/lexima.vim",
     use {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim",         -- required
+        "nvim-telescope/telescope.nvim", -- optional
+        "sindrets/diffview.nvim",        -- optional
+        "ibhagwan/fzf-lua",              -- optional
+      },
+      config = true    
+    },
+    use {
       "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
         requires = { 
