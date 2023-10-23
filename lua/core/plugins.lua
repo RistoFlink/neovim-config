@@ -58,9 +58,7 @@ local ensure_packer = function()
       {'rafamadriz/friendly-snippets'}, -- Optional
       },
     use {"akinsho/toggleterm.nvim", tag = '*' },
-    --use "jhlgns/naysayer88.vim",
     use "terrortylor/nvim-comment",
-    use "CreaturePhil/vim-handmade-hero",
     use "lukas-reineke/indent-blankline.nvim",
     use "cohama/lexima.vim",
     use {
