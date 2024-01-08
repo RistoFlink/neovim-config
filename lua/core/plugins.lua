@@ -17,7 +17,7 @@ local ensure_packer = function()
     -- use 'foo1/bar1.nvim'
     -- use 'foo2/bar2.nvim'
     --use { "ellisonleao/gruvbox.nvim" }
-    use "sainnhe/gruvbox-material"
+    -- use "sainnhe/gruvbox-material"
     -- use({
     --   "neanias/everforest-nvim",
     --   -- Optional; default configuration will be used if setup isn't called.
@@ -25,6 +25,15 @@ local ensure_packer = function()
     --     require("everforest").setup()
     --   end,
     -- })
+	   use ({
+       "rose-pine/neovim",
+       -- Optional; default configuration will be used if setup isn't called.
+       config = function()
+         require("rose-pine").setup({
+			 variant = "moon",
+		 })
+       end,
+     })
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
