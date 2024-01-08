@@ -25,15 +25,7 @@ local ensure_packer = function()
     --     require("everforest").setup()
     --   end,
     -- })
-	   use ({
-       "rose-pine/neovim",
-       -- Optional; default configuration will be used if setup isn't called.
-       config = function()
-         require("rose-pine").setup({
-			 variant = "moon",
-		 })
-       end,
-     })
+    use "rose-pine/neovim"
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
